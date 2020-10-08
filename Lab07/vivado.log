@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Oct  8 11:50:10 2020
+# Process ID: 16156
+# Current directory: C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16432 C:\Users\abby_joseph1\Documents\GitHub\Lab07\Lab07\Lab07.xpr
+# Log file: C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/vivado.log
+# Journal file: C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07\vivado.jou
+#---------------------------------------------------------stastart_gopen_project C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.xpr
+Scanning sources...
+INFFinished scanning sources
+WARNING: [filemgmt 56-3] Default IP INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 11:52:31 2020...
+AL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVitis/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:01:03 . Memory (MB): peak = 1096.613 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv w ]
+add_files -fileset sim_1 C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj add3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+WARNING: [VRFC 10-3028] 'num' was previously declared with a range [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'num' [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv:30]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'modnum' [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.add3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_test_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim/xsim.dir/add3_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct  8 12:03:37 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1096.613 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_test_behav -key {Behavioral:sim_1:Functional:add3_test} -tclbatch {add3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source add3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" Line 48
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1096.613 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:19 . Memory (MB): peak = 1096.613 ; gain = 0.000
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj add3_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'num' [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv:30]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'modnum' [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv:31]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_test_behav -key {Behavioral:sim_1:Functional:add3_test} -tclbatch {add3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source add3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" Line 48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1096.613 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj add3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+WARNING: [VRFC 10-3028] 'num' was previously declared with a range [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'num' [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv:30]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'modnum' [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv:31]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.add3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_test_behav -key {Behavioral:sim_1:Functional:add3_test} -tclbatch {add3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source add3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" Line 48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1096.613 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj add3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.add3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_test_behav -key {Behavioral:sim_1:Functional:add3_test} -tclbatch {add3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source add3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" Line 48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1096.613 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj add3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.add3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_test_behav -key {Behavioral:sim_1:Functional:add3_test} -tclbatch {add3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source add3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" Line 45
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1096.613 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj add3_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_test
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_test_behav xil_defaultlib.add3_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.add3_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_test_behav -key {Behavioral:sim_1:Functional:add3_test} -tclbatch {add3_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source add3_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 100 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3_test.sv" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1096.613 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b.sv w ]
+add_files C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b_test.sv w ]
+add_files -fileset sim_2 C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b_test.sv
+current_fileset -simset [ get_filesets sim_2 ]
+update_compile_order -fileset sim_2
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'BCD6b_test' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+"xvlog --incr --relax -prj BCD6b_test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD6b
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'tens' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b.sv:30]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD6b_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot BCD6b_test_behav xil_defaultlib.BCD6b_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot BCD6b_test_behav xil_defaultlib.BCD6b_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.BCD6b
+Compiling module xil_defaultlib.BCD6b_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot BCD6b_test_behav
+
+****** Webtalk v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim/xsim.dir/BCD6b_test_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct  8 12:48:08 2020...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "BCD6b_test_behav -key {Behavioral:sim_2:Functional:BCD6b_test} -tclbatch {BCD6b_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source BCD6b_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 320 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b_test.sv" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'BCD6b_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1096.613 ; gain = 0.000
+update_compile_order -fileset sim_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset [get_filesets sim_2 ]
+Command: launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'BCD6b_test' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+"xvlog --incr --relax -prj BCD6b_test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+"xelab -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot BCD6b_test_behav xil_defaultlib.BCD6b_test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/XilinxVitis/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 40935c865c2c46d89270689a18976eb5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot BCD6b_test_behav xil_defaultlib.BCD6b_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "BCD6b_test_behav -key {Behavioral:sim_2:Functional:BCD6b_test} -tclbatch {BCD6b_test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source BCD6b_test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 320 ns : File "C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD6b_test.sv" Line 42
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'BCD6b_test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1188.289 ; gain = 0.594
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv w ]
+add_files C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv
+update_compile_order -fileset sources_1
+create_fileset -simset sim_3
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+close [ open C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b_test.sv w ]
+add_files -fileset sim_3 C:/Users/abby_joseph1/Documents/GitHub/Lab07/systemverilogcode/BCD11b_test.sv
+update_compile_order -fileset sim_3
