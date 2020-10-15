@@ -1,0 +1,140 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 10092
+License: Customer
+
+Current time: 	Thu Oct 15 11:45:00 CDT 2020
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/XilinxVitis/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/XilinxVitis/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	abby_joseph1
+User home directory: C:/Users/abby_joseph1
+User working directory: C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/XilinxVitis/Vivado
+HDI_APPROOT: C:/XilinxVitis/Vivado/2020.1
+RDI_DATADIR: C:/XilinxVitis/Vivado/2020.1/data
+RDI_BINDIR: C:/XilinxVitis/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/abby_joseph1/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/XilinxVitis/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/vivado.log
+Vivado journal file location: 	C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/vivado.jou
+Engine tmp dir: 	C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/.Xil/Vivado-10092-ROG-305-01
+
+Xilinx Environment Variables
+----------------------------
+VSSDK140Install: C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\
+XILINX: C:/XilinxVitis/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/XilinxVitis/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/XilinxVitis/Vivado/2020.1
+XILINX_SDK: C:/XilinxVitis/Vitis/2020.1
+XILINX_VITIS: C:/XilinxVitis/Vitis/2020.1
+XILINX_VIVADO: C:/XilinxVitis/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/XilinxVitis/Vivado/2020.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,092 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 96 MB (+98611kb) [00:00:05]
+// [Engine Memory]: 1,092 MB (+993626kb) [00:00:05]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\abby_joseph1\Documents\GitHub\Lab07\Lab07\Lab07.xpr. Version: Vivado v2020.1.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 121 MB (+20656kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2941 ms.
+// Tcl Message: open_project C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07/Lab07.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/aajos/Documents/GitHub/Lab07/Lab07' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVitis/Vivado/2020.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,092 MB. GUI used memory: 60 MB. Current time: 10/15/20, 11:45:04 AM CDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1112.676 ; gain = 0.000 
+// Project name: Lab07; location: C:/Users/abby_joseph1/Documents/GitHub/Lab07/Lab07; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD6b (BCD6b.sv)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD6b (BCD6b.sv)]", 1, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BCD6b (BCD6b.sv)]", 1, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 6); // B (F, cs)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cs)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg1_BCD (sseg1_BCD.sv)]", 5); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg1_BCD (sseg1_BCD.sv), my_BCD11b : BCD11b (BCD11b.sv)]", 6, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sseg1_BCD (sseg1_BCD.sv), my_BCD11b : BCD11b (BCD11b.sv), C6 : add3 (add3.sv)]", 12, false, false, false, false, false, true); // B (F, cs) - Double Click
+// [GUI Memory]: 133 MB (+6745kb) [00:00:56]
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD6b.sv", 1); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 78 MB. Current time: 10/15/20, 12:15:07 PM CDT
+// Elapsed time: 3001 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BCD11b.sv", 2); // m (l, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 69 MB. Current time: 10/15/20, 12:45:07 PM CDT
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 9658 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 9563 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 8425 ms. Increasing delay to 25275 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8825 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 18 ms. Decreasing delay to 2018 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,127 MB. GUI used memory: 70 MB. Current time: 10/15/20, 1:15:08 PM CDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
