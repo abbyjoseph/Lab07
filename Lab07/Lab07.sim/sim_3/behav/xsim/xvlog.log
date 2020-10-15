@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD11b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'num' is not allowed [C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/add3.sv:28]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/BCD11b_test.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCD11b_test

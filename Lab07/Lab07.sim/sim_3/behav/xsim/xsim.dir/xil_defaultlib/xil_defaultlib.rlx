@@ -1,0 +1,8 @@
+0.7
+2020.1.1
+Aug  5 2020
+23:19:43
+C:/Users/aajos/Documents/GitHub/Lab07/Lab07/Lab07.sim/sim_3/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/BCD11b.sv,1602730705,systemVerilog,,C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/add3.sv,,BCD11b,,,,,,,,
+C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/BCD11b_test.sv,1602704510,systemVerilog,,,,BCD11b_test,,,,,,,,
+C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/add3.sv,1602277956,systemVerilog,,C:/Users/aajos/Documents/GitHub/Lab07/systemverilogcode/BCD11b_test.sv,,add3,,,,,,,,
