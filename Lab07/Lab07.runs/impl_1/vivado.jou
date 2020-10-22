@@ -2,11 +2,11 @@
 # Vivado v2020.1.1 (64-bit)
 # SW Build 2960000 on Wed Aug  5 22:57:20 MDT 2020
 # IP Build 2956692 on Thu Aug  6 01:41:30 MDT 2020
-# Start of session at: Wed Oct 14 22:47:00 2020
-# Process ID: 6044
+# Start of session at: Wed Oct 21 15:22:36 2020
+# Process ID: 1360
 # Current directory: C:/Users/aajos/Documents/GitHub/Lab07/Lab07/Lab07.runs/impl_1
-# Command line: vivado.exe -log BCD6b.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BCD6b.tcl -notrace
-# Log file: C:/Users/aajos/Documents/GitHub/Lab07/Lab07/Lab07.runs/impl_1/BCD6b.vdi
+# Command line: vivado.exe -log sseg1_BCD.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sseg1_BCD.tcl -notrace
+# Log file: C:/Users/aajos/Documents/GitHub/Lab07/Lab07/Lab07.runs/impl_1/sseg1_BCD.vdi
 # Journal file: C:/Users/aajos/Documents/GitHub/Lab07/Lab07/Lab07.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source BCD6b.tcl -notrace
+source sseg1_BCD.tcl -notrace
